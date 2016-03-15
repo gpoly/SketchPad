@@ -137,7 +137,11 @@ function clearGrid(){
        $("#clear").click(function(){
 
         $('.grid').removeClass('divBack');
-        $('.grid').css("background-color", "");
+         $('.grid').css({
+                         "background-color": "",
+                         "box-shadow": "none"
+
+                      });
   
 
 
