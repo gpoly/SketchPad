@@ -297,6 +297,7 @@ section {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  outline:0;
 }
 
 /* line 224, ../sass/screen.scss */
