@@ -1,0 +1,268 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+@import "base";
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/typography/links";
+@import "compass/typography/text";
+@import "grids";
+@import "mixin";
+
+
+
+
+body { @include container(80em);
+
+       background: $LightRaf;
+       /*font-family: Geneva,Tahoma,Verdana,sans-serif;*/
+       @import url(https://fonts.googleapis.com/css?family=Indie+Flower); 
+
+
+ }
+
+#container{ @include container(80%);
+
+    border: 1px solid #ddd;
+    background: $Lightgreen;
+    min-height: 800px;
+
+
+}
+
+
+
+header{
+	     @include span(12);
+	     @include my-text-shadow;
+
+	     h1{
+	     	color: $LightBrown;
+	     	
+	     	text-align: center;
+	     	margin: 10px;
+	     	padding: 10px;
+	     	font-family: 'Indie Flower', cursive;
+	     	font-size: 2.5em;
+	        font-style: normal;
+	        font-variant: normal;
+	        font-weight: 500;
+	        line-height: 26.4px;
+
+	     }	          
+}
+
+
+nav{ @include span(12);
+	border-bottom: 1px solid #ccc;
+	background: $LightSomon;
+	overflow: hidden;
+    
+
+ul {
+
+    text-align: center;
+    
+}
+
+ul li{
+    
+    @include inline-block;
+    -webkit-box-sizing: border-box;
+ 	   -moz-box-sizing: border-box;
+ 	        box-sizing: border-box;
+    text-align: center;
+    margin: 20px 67px;
+    float: left;
+   
+ 	
+    
+ }
+
+ li a:link {
+
+   @include hover-link;
+   @include link-colors($normal, $hover, $active, $visited, $focus);
+ 	 padding: 10px; 
+
+ }
+
+ li a:hover {
+
+ 
+ 	/*background:$LightRaf;*/
+
+
+ 	 
+
+ }
+
+}
+
+
+section{
+  @include span(12);
+  display: flex;
+  justify-content: center;
+  align-items:left;
+
+
+}
+      
+ 
+
+.info {
+    @include span(1 at 4);
+	width:200px;
+	padding: 10px;
+  margin-left:-100px;
+	border-right: 1px solid #ddd;
+	height: 100%;
+li span{
+
+	font-weight: bold;
+
+       }
+li:nth-child(5) {
+
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px
+
+       }
+li{ 
+	line-height: 1.2em;
+	border-bottom: 1px dotted $LightBrown; 
+
+}       
+h1{
+
+     font-size: 1.6em;
+     text-transform: capitalize;
+     text-align: center;
+
+  }
+h1::first-Letter{ font-size: 2em;
+  font-style: italic; }
+
+button{
+
+  padding: 4px;
+  margin: 4px;
+}
+
+}
+
+
+
+
+#pad {
+	@include span(12);
+    width: 600px;
+    height: auto;
+    margin: 0px 0px 0px 50px;
+    border: 4px solid #ddd;
+    background: #000
+}
+
+
+.colorOne{
+ background-color: yellow;
+
+}
+
+.divBack{
+
+	background: yellow;
+  
+}
+
+
+.grid {
+  margin:0;
+  padding:0;
+  border:none;
+  outline: 1px solid #fff;
+  display:inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+ 
+}
+
+.gridToggle {
+  margin:0;
+  padding:0;
+  border:none;
+  display:inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+.btn {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #fff;
+  font-size:14px;
+  background: #7d4627;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  width:90px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.btn:hover {
+  background: #7d4627;
+  background-image: -webkit-linear-gradient(top, #7d4627, #d99c34);
+  background-image: -moz-linear-gradient(top, #7d4627, #d99c34);
+  background-image: -ms-linear-gradient(top, #7d4627, #d99c34);
+  background-image: -o-linear-gradient(top, #7d4627, #d99c34);
+  background-image: linear-gradient(to bottom, #7d4627, #d99c34);
+  text-decoration: none;
+  width: 90px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.btnNav {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #fff;
+  font-size:14px;
+  background: #7d4627;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+ 
+}
+
+
+.btnNav:hover {
+  @extend .btnNav;
+  background-image: -webkit-linear-gradient(top, #7d4627, #d99c34);
+  background-image: -moz-linear-gradient(top, #7d4627, #d99c34);
+  background-image: -ms-linear-gradient(top, #7d4627, #d99c34);
+  background-image: -o-linear-gradient(top, #7d4627, #d99c34);
+  background-image: linear-gradient(to bottom, #7d4627, #d99c34);
+  
+ 
+}
+
+.btnNav{
+@extend .btnNav;
+border: none;
+
+}

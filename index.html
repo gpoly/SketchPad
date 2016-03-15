@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>SketchPad</title>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/application.js"></script>
+ 	  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if IE]>
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+  <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
+ </head>
+
+ <body>
+ 	<div id="container">
+ 	 <header>
+ 	 	<h1>SketchPad</h1>
+ 	 </header>
+   
+
+ 	 <nav>
+ 	 	<ul>
+ 	 		<li><button onClick="createNewPad()" class="btnNav" autofocus>First Edition</a></li>
+ 	 		<li><button onClick="createNewPadRandom()" class="btnNav" autofocus>Second Edition</a></li>
+ 	 		<li><button onClick="createNewPadTail()" class="btnNav" >Third Edition</a></li>
+ 	 		<li><button id="clear" class="btnNav" autofocus>Reset</button></li>
+ 	 	</ul>
+ 	 </nav>
+
+    <section>
+      <div class="info">
+    	<h1>informations:</h1>
+    </br>
+      <p>With this Sketchpad you can draw anything you like!!!</br>
+      </br>Try different versions and enrich your experience!!!</p>
+    </br>
+
+      <ul>
+       <li><span>First Edition:</span><br/> The default with users grids.</li>
+       <li><span>Second Edition:</span><br/> With different colors.</li>
+       <li><span>Third Edition:</span><br/>With no color.</li>
+       <li><span>Reset:</span><br/>Clears all and start over.</li>
+       <li><span> Borders or not?</span></li>
+       <Button type ="radio" onclick="toggleBordersB()" id="toggB" checked class="btn">Borders</button>
+       <Button type ="radio" onclick="toggleBorders()" id="togg" class="btn">No Borders</button>
+       
+       
+
+       
+      </ul>
+      <p ></p>
+
+      </div>
+    
+    <div id="pad"> </div> <!-- This is where the grids are living -->
+
+    </section>
+
+
+     <footer></footer>
+     
+ </div>
+ </body>
+ 
+</html>

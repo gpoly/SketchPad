@@ -1,0 +1,342 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* Colors Collection */
+/* line 5, ../../../fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Variables */
+/* line 18, ../sass/screen.scss */
+body {
+  max-width: 80em;
+  margin-left: auto;
+  margin-right: auto;
+  background: #a8b6bf;
+  /*font-family: Geneva,Tahoma,Verdana,sans-serif;*/
+  @import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+}
+/* line 12, ../../../fire.app.windows.1.14/fire.app/lib/ruby/compass_extensions/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 27, ../sass/screen.scss */
+#container {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ddd;
+  background: #c9d8c5;
+  min-height: 800px;
+}
+/* line 12, ../../../fire.app.windows.1.14/fire.app/lib/ruby/compass_extensions/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+#container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 38, ../sass/screen.scss */
+header {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  text-shadow: rgba(0, 0, 255, 0.2) 1px 1px 0, rgba(0, 0, 255, 0.2) 2px 2px 0, rgba(0, 0, 255, 0.2) 3px 3px 0;
+}
+/* line 42, ../sass/screen.scss */
+header h1 {
+  color: #7d4627;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 2.5em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+}
+
+/* line 59, ../sass/screen.scss */
+nav {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom: 1px solid #ccc;
+  background: #edd9c0;
+  overflow: hidden;
+}
+/* line 65, ../sass/screen.scss */
+nav ul {
+  text-align: center;
+}
+/* line 71, ../sass/screen.scss */
+nav ul li {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 20px 67px;
+  float: left;
+}
+/* line 85, ../sass/screen.scss */
+nav li a:link {
+  text-decoration: none;
+  color: #7d4627;
+  padding: 10px;
+}
+/* line 4, ../../../fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/typography/links/_hover-link.scss */
+nav li a:link:hover, nav li a:link:focus {
+  text-decoration: underline;
+}
+/* line 18, ../../../fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+nav li a:link:visited {
+  color: #a8b6bf;
+}
+/* line 21, ../../../fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+nav li a:link:focus {
+  color: #7d4627;
+}
+/* line 24, ../../../fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+nav li a:link:hover {
+  color: #7d4627;
+}
+/* line 27, ../../../fire.app.windows.1.14/fire.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+nav li a:link:active {
+  color: #7d4627;
+}
+/* line 93, ../sass/screen.scss */
+nav li a:hover {
+  /*background:$LightRaf;*/
+}
+
+/* line 106, ../sass/screen.scss */
+section {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+
+/* line 117, ../sass/screen.scss */
+.info {
+  width: 6.7796610169%;
+  float: left;
+  margin-right: 1.6949152542%;
+  width: 200px;
+  padding: 10px;
+  margin-left: -100px;
+  border-right: 1px solid #ddd;
+  height: 100%;
+}
+/* line 124, ../sass/screen.scss */
+.info li span {
+  font-weight: bold;
+}
+/* line 129, ../sass/screen.scss */
+.info li:nth-child(5) {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+/* line 136, ../sass/screen.scss */
+.info li {
+  line-height: 1.2em;
+  border-bottom: 1px dotted #7d4627;
+}
+/* line 141, ../sass/screen.scss */
+.info h1 {
+  font-size: 1.6em;
+  text-transform: capitalize;
+  text-align: center;
+}
+/* line 148, ../sass/screen.scss */
+.info h1::first-Letter {
+  font-size: 2em;
+  font-style: italic;
+}
+/* line 151, ../sass/screen.scss */
+.info button {
+  padding: 4px;
+  margin: 4px;
+}
+
+/* line 162, ../sass/screen.scss */
+#pad {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  width: 600px;
+  height: auto;
+  margin: 0px 0px 0px 50px;
+  border: 4px solid #ddd;
+  background: #000;
+}
+
+/* line 172, ../sass/screen.scss */
+.colorOne {
+  background-color: yellow;
+}
+
+/* line 177, ../sass/screen.scss */
+.divBack {
+  background: yellow;
+}
+
+/* line 184, ../sass/screen.scss */
+.grid {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 1px solid #fff;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 196, ../sass/screen.scss */
+.gridToggle {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 207, ../sass/screen.scss */
+.btn {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #fff;
+  font-size: 14px;
+  background: #7d4627;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  width: 90px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 224, ../sass/screen.scss */
+.btn:hover {
+  background: #7d4627;
+  background-image: -webkit-linear-gradient(top, #7d4627, #d99c34);
+  background-image: -moz-linear-gradient(top, #7d4627, #d99c34);
+  background-image: -ms-linear-gradient(top, #7d4627, #d99c34);
+  background-image: -o-linear-gradient(top, #7d4627, #d99c34);
+  background-image: linear-gradient(to bottom, #7d4627, #d99c34);
+  text-decoration: none;
+  width: 90px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 239, ../sass/screen.scss */
+.btnNav, .btnNav:hover {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #fff;
+  font-size: 14px;
+  background: #7d4627;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+/* line 253, ../sass/screen.scss */
+.btnNav:hover {
+  background-image: -webkit-linear-gradient(top, #7d4627, #d99c34);
+  background-image: -moz-linear-gradient(top, #7d4627, #d99c34);
+  background-image: -ms-linear-gradient(top, #7d4627, #d99c34);
+  background-image: -o-linear-gradient(top, #7d4627, #d99c34);
+  background-image: linear-gradient(to bottom, #7d4627, #d99c34);
+}
+
+/* line 264, ../sass/screen.scss */
+.btnNav, .btnNav:hover {
+  border: none;
+}
